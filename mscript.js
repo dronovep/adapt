@@ -1,13 +1,10 @@
 $(document).ready(function () {
+    var adaptivebody = new Body($('body').get(0));
 
-    // this.page = new Page();
-    //для удобства делаем этому объекту алиас
-    // let page = this.page;
+    $(window).resize(function (event) {
+        adaptivebody.adapt();
+    });
 
-    //page.adapt();
-
-    let menubar = new MenuBar();
-    //console.log(menubar);
-    menubar.adapt();
+    $(window).resize();
 });
 

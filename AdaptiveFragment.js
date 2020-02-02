@@ -1,39 +1,70 @@
-function AdaptiveFragment(parent= undefined) {
+function AdaptiveFragment(element) {
 
     var fragment = this;
-    this.adapt = AdaptiveFragment.prototype.adapt;
 
-    if (this.selector != undefined) {
-        if (parent != undefined) {
-            this.jelements = $(parent).find(this.selector);
-        } else {
-            this.jelements = $(this.selector);
-        }
+    //Проверяем, что DOM элемент для конструирования адаптивного фрагмента передан
+    if (element == undefined) {
+        throw new DOMException('Не передан элемент, на основании которого делать адаптивный фрагмент');
+    }
 
-        this.jelements.each(function (element) {
-            for (let child_fragment_type of fragment.child_fragment_types) {
-                this.child_fragments[child_fragment_type] = new child_fragment_type();
-            }
+    this.element = element;                 //записываем элемент в объект
+    this.childs = {};                       //формируем объект дочерних элементов данного элемента
+    let jelement = $(this.element);
+
+    //сразу вычисляем и сохраняем изначальный получившийся класс адаптива для элемента
+    this.adaptclass = this.calculateAdaptationStyleFromWidth();
+    if (this.adaptclass != '') {
+        jelement.addClass(this.adaptclass);
+    }
+
+    for (let childtype of this.childtypes) {
+        this.childs[childtype] = [];
+        jelement.find(childtype.prototype.selector).each(function () {
+            fragment.childs[childtype].push(new childtype(this));
         });
-    } else {
-        throw new DOMException('Отсутствует селектор => неверно реализован адаптивный фрагмент', 'Адаптивный фрагмент: нет селектора');
     }
 }
 
-AdaptiveFragment.prototype.selector        = undefined;
-AdaptiveFragment.prototype.adaptLogic      = undefined;
-AdaptiveFragment.prototype.child_fragment_types = [];
+AdaptiveFragment.prototype.selector          = undefined;
+//AdaptiveFragment.prototype.adaptLogic      = undefined;
+AdaptiveFragment.prototype.childtypes        = undefined;
 
+AdaptiveFragment.prototype.adaptation        = {
+    stepsize: undefined,
+    stepstyles: undefined
+};
+
+AdaptiveFragment.prototype.adaptation = {
+    stepsize: undefined,
+    styleclasses: undefined
+};
+
+AdaptiveFragment.prototype.calculateAdaptationStyleFromWidth = function () {
+    let index = Math.floor($(this.element).width() / this.adaptation.stepsize);
+    if (index >= this.adaptation.styleclasses.length) {
+        index = this.adaptation.styleclasses.length - 1;
+    }
+    return this.adaptation.styleclasses[index];
+};
 
 AdaptiveFragment.prototype.adapt = function () {
 
-    var fragment = this;
-    this.jelements.each(function (element) {
-        fragment.adaptLogic.call(element);
-    });
+    let newadaptclass = this.calculateAdaptationStyleFromWidth();
 
-    for (let child_fragment of this.child_fragment_types) {
-        child_fragment.adapt();
+    //если ширина изменилась настолько, что нужно снова адаптировать
+    if (newadaptclass != this.adaptclass) {
+        let jelement = $(this.element);
+
+        jelement.removeClass(this.adaptclass);
+        this.adaptclass = newadaptclass;
+        jelement.addClass(this.adaptclass);
+    }
+
+    //адаптируем всех детей фрагмента
+    for (let childtype of this.childtypes) {
+        for (let child of this.childs[childtype]) {
+            child.adapt();
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 function Page() {
+
     // var page = this;
     //
     // this.jmenubar = $('.menu.bar');

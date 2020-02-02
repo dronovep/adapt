@@ -14,86 +14,63 @@ a {
     text-decoration: none;
 }
 
-li > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.bar {
-    width: 100%;
-}
-
 .panel {
-    height: 100%;
-}
-
-.menu.bar {
-    height:1.6em;
-    border-radius: 0 0 0.4em 0.4em;
-    background-color: #cc99ff;
-    list-style-type: none;
-    text-align: center;
-}
-
-.menu.bar > li {
-    display: inline-block;
-    float: left;
-    height: 100%;
-    width: 8%;
-    font-size: 1.1em;
-    padding-top:0.1em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.menu.bar > li:first-child {
-    border-radius: 0 0 0 0.4em;
-}
-
-.menu.bar > li:last-child {
-    border-radius: 0 0 0.4em 0;
-    /*width:16%;*/
-}
-
-
-.menu.bar > li:hover {
-    background-color: #e6ccff;
-}
-
-.menu.panel > li {
     display: block;
+}
+
+body.narrow > .panel {
     width: 100%;
+    height: 50%;
 }
 
-.menu.panel > li:hover {
-    background-color:  #ffe6cc;        
+body.wide > .panel {
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
-
-.menu.panel {
-    width: 20em;
-    border-radius: 0 0.4em 0.4em 0;
-    background-color: #ffcc99;    
+.panel:first-child {
+    background-color: #dad55e;
 }
-    
-.top.bar[adapt=""] {
-    display: none;
-}
-
-.menu.panel[adapt=""] {
-    display: none;
+.panel:last-child {
+    background-color: aquamarine;
 }
 
 
-/* Верхняя панель меню максимально растянута */
-@media (max-width: 719px) {
-    .menu.bar > li {
-    	width: 12%;
-    }
+.punct {
+    display: block;
+}
 
-    .menu.bar > li:last-child {
-    	width:12%;
-    }
-    
+.punct > img {
+    display: block;
+}
+
+.punct.horizontal {
+    float:left;
+    width: 30%;
+}
+
+.punct.horizontal > img {
+    float:left;
+}
+
+.punct.horizontal > div {
+    float: left;
+    padding-top: 0.8em;
+    padding-left: 1em;
+}
+
+.punct.vertical {
+    /*float:left;*/
+    width: 30%;
+}
+
+.punct.vertical > img {
+    /*float:left;*/
+}
+
+.punct.vertical > div {
+    /*float: left;*/
+    padding-top: 0.8em;
+    padding-left: 1em;
 }

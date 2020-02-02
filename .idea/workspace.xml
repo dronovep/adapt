@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd449d9d-a7c0-48c0-b661-b9520ccebd06" name="Default Changelist" comment="" />
+    <list default="true" id="fd449d9d-a7c0-48c0-b661-b9520ccebd06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Punct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdaptiveFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdaptiveFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/Page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/mstyle.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +31,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1X2V58dbtIIKh2sDx96kzTS00qI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,10 +42,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,6 +60,11 @@
       <updated>1580243990748</updated>
       <workItem from="1580243992470" duration="2322000" />
       <workItem from="1580317046220" duration="15054000" />
+      <workItem from="1580403584299" duration="5722000" />
+      <workItem from="1580551778661" duration="191000" />
+      <workItem from="1580552005834" duration="4486000" />
+      <workItem from="1580557830354" duration="6293000" />
+      <workItem from="1580592216625" duration="7283000" />
     </task>
     <servers />
   </component>
@@ -51,10 +72,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="172" y="5" key="SettingsEditor" timestamp="1580244088236">
+    <state x="366" y="98" width="628" height="541" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580551968056">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="172" y="5" key="SettingsEditor/0.0.1366.735@0.0.1366.735" timestamp="1580244088236" />
+    <state x="366" y="98" width="628" height="541" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.735@0.0.1366.735" timestamp="1580551968056" />
+    <state x="172" y="5" key="SettingsEditor" timestamp="1580558190478">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="172" y="5" key="SettingsEditor/0.0.1366.735@0.0.1366.735" timestamp="1580558190478" />
     <state x="345" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580339887058">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
