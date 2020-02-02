@@ -16,16 +16,15 @@ a {
 
 .panel {
     display: block;
+    height: auto;
 }
 
 body.narrow > .panel {
     width: 100%;
-    height: 50%;
 }
 
 body.wide > .panel {
     width: 50%;
-    height: 100%;
     float: left;
 }
 
@@ -36,18 +35,24 @@ body.wide > .panel {
     background-color: aquamarine;
 }
 
+.panel:after {
+    content: "&nbsp;";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
 
 .punct {
     display: block;
+    float:left;
+    width: 30%;
 }
 
 .punct > img {
     display: block;
-}
-
-.punct.horizontal {
-    float:left;
-    width: 30%;
 }
 
 .punct.horizontal > img {
@@ -61,16 +66,15 @@ body.wide > .panel {
 }
 
 .punct.vertical {
-    /*float:left;*/
-    width: 30%;
+    text-align: center;
 }
 
 .punct.vertical > img {
-    /*float:left;*/
+    margin: auto;
 }
 
 .punct.vertical > div {
-    /*float: left;*/
     padding-top: 0.8em;
-    padding-left: 1em;
 }
+
+    

@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    var adaptivebody = new Body($('body').get(0));
+
+    var adaptive_view = new Body();
 
     $(window).resize(function (event) {
-        adaptivebody.adapt();
+        adaptive_view.adapt();
     });
 
     $(window).resize();
