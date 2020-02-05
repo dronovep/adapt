@@ -6,6 +6,6 @@ $(document).ready(function () {
         adaptive_view.adapt();
     });
 
-    $(window).resize();
+    //$(window).resize();
 });
 

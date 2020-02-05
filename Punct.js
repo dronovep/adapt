@@ -10,7 +10,7 @@ Punct.prototype = Object.create(AdaptiveElement.prototype);
 Punct.prototype.selector        = '.punct';
 Punct.prototype.childtypes = [];                              //у него нету дочерних адаптивных элементов
 Punct.prototype.adaptation = {
-    stepsize: 150,
+    stepsize: 140,
     styleclasses: ['vertical', 'horizontal']
 };
 

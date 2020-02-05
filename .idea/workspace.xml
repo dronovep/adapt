@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd449d9d-a7c0-48c0-b661-b9520ccebd06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AdaptiveView.js" afterDir="false" />
+    <list default="true" id="fd449d9d-a7c0-48c0-b661-b9520ccebd06" name="Default Changelist" comment="Подправил шрифт">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdaptiveFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdaptiveElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Panel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Punct.js" beforeDir="false" afterPath="$PROJECT_DIR$/Punct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/mscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/mstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,22 +61,97 @@
       <workItem from="1580557830354" duration="6293000" />
       <workItem from="1580592216625" duration="7364000" />
       <workItem from="1580675613697" duration="228000" />
-      <workItem from="1580675970802" duration="8923000" />
+      <workItem from="1580675970802" duration="10006000" />
+      <workItem from="1580922656033" duration="1596000" />
+      <workItem from="1580925183032" duration="8356000" />
     </task>
+    <task id="LOCAL-00001" summary="Подправил шрифт">
+      <created>1580925405669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580925405669</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Меняю пороговую ширину пункта">
+      <created>1580930658642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580930658642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Подправил шрифт" />
+    <MESSAGE value="Меняю пороговую ширину пункта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Меняю пороговую ширину пункта" />
   </component>
   <component name="WindowStateProjectService">
     <state x="366" y="98" width="628" height="541" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580551968056">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="366" y="98" width="628" height="541" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.735@0.0.1366.735" timestamp="1580551968056" />
+    <state x="255" y="0" width="850" height="735" key="CommitChangelistDialog2" timestamp="1580930658279">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="255" y="0" width="850" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1580930658279" />
+    <state x="98" y="100" width="1170" height="537" key="DiffContextDialog" timestamp="1580925265655">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="98" y="100" width="1170" height="537" key="DiffContextDialog/0.0.1366.735@0.0.1366.735" timestamp="1580925265655" />
     <state x="172" y="5" key="SettingsEditor" timestamp="1580558190478">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="172" y="5" key="SettingsEditor/0.0.1366.735@0.0.1366.735" timestamp="1580558190478" />
+    <state x="278" y="104" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580930671680">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="278" y="104" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1580930671680" />
     <state x="345" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580339887058">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
